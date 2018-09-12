@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet"> 
+    <link rel="stylesheet" href="./main.css">
+    <title>Reed Cheatham</title>
+</head>
+<body>
+    <header>
+        <h1>Reed Cheatham</h1>
+        <nav>
+            <a href="#inputs-box">Bio</a>
+            <a href="#monthly-graph-container">Projects</a>
+            <a href="#table-box">Contact</a>
+            <a href="#table-box">GitHub</a>
+            <a href="#table-box">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <section id="info">
+            <div id="headline">
+                    <p>
+                        I'm Reed, a <span style="color:red;">front-end developer</span> & <span style="color:red;">design enthusiast</span> based out of Atlanta, GA.
+                    </p>
+            </div>
+            <div id="bio">
+                <p>
+                After five years in finance, I am starting a career in web development <br>
+                having recently graduated from the Full Stack Developer bootcamp at Thinkful. <br> 
+                I enjoy taking the problem solving skills I developed with financial modeling <br>
+                to a new level in coding dynamic, exciting web applications. <br>
+                <br>
+                I find the coding process very rewarding from designing the look and feel of a site <br>
+                to building its efficient functionality in order to create an exciting user experience. <br>
+                I am always learning and love to be introduced to new concepts, frameworks, design trends, <br>
+                and ideas. When I am not coding I enjoy volunteering, meet-ups with the great tech scene in Atlanta,
+                and hiking.
+                </p>
+            </div>
+        </section>
+        <section id="movieMachine">
+            <div>
+                <p>
+                    The Movie Machine is an app that provides you a list of recommended titles based on one of your favorite
+                    films. Each result provides cast, rating, and plot information, along with MovieClips from YouTube, and links
+                    to places to stream or purchase online
+                </p>
+                <div class="tech">
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+            </div>
+            <div class="screenShot">   
+                <img src='./movieMachine.PNG' id="movieImage">
+                <div>
+                    <a href="https://rrcheatham.github.io/firstCapstone/"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/rrcheatham/firstCapstone"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="expenseTracker">
+            <div>
+                <p>
+                    The Fintech Guru Expense Tracker is a simple expense tracker that gives users the ability to track, manage, 
+                    and target their monthly expenses over the course of a full year.
+                </p>
+                <div class="tech">
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-node-js"></i>
+                </div>
+            </div>
+            <div class="screenShot">   
+                <img src='./expenseTracker.PNG' id="expenseImage">
+                <div>
+                    <a href="https://salty-sands-51300.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/rrcheatham/secondCapstone"><i class="fab fa-github"></i></a>
+                </div>    
+            </div>
+        </section>
+        <section id="goodLife">
+            <div>
+                <p>
+                    The Good Life is a retirement tracker app that allows users to target the amount they need 
+                    for retirement and track or adjust their savings to meet that goal.
+                </p>
+                <div class="tech">
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-node-js"></i>
+                </div>
+            </div>
+            <div class="screenShot">   
+                <img src='./goodLife.PNG' id="retirementImage">
+                <div>
+                    <a href="https://arcane-taiga-47013.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/rrcheatham/retirement-calc-client"><i class="fab fa-github"></i>(client)</a>
+                    <a href="https://github.com/rrcheatham/retirement-calc-api"><i class="fab fa-github"></i>(api)</a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <span style="font-weight: bold;">Contact Me</span>
+            <form id="contactForm">
+                <div class="inputDiv">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName">
+                </div>
+                <div class="inputDiv">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName">
+                </div>
+                <div class="inputDiv">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="inputDiv">
+                    <label for="message">Message:</label>
+                    <textarea name="message" rows="10" id="message"></textarea>
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2018 Reed Cheatham</p>
+    </footer>
+</body>
+</html>
