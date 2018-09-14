@@ -77,9 +77,14 @@ nav {
     font-style: italic;
 }
 
+#bio p {
+    margin-top: 0px;
+}
+
 #contact {
     text-align: center;
     width: 80%;
+    border-bottom: none;
 }
 
 #contactForm {
@@ -93,6 +98,44 @@ nav {
     flex-direction: column;
 }
 
+input {
+    height: 25px;
+    border-radius: 3px;
+    border: 2px solid lightsteelblue;
+    background: rgb(243, 243, 243);
+}
+
+textarea {
+    border-radius: 3px;
+    border: 2px solid lightsteelblue;
+    background: rgb(243, 243, 243);
+}
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 25px;
+    display: inline-block;
+    border:1px solid #7D99CA;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    font-family: Verdana;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    padding: 10px 40px;
+    background-image: linear-gradient(to top, #A8BBDE, #7089B3);
+    background-color: #A5B8DA;
+}
+
+.btn:hover, 
+.btn:active {
+    border:1px solid #5D7FBC;
+    color: #fff;
+    background-color: #97A8C7;
+}
 
 @media screen and (min-width: 768px) {
     header {
@@ -121,7 +164,11 @@ nav {
     }
 
     #headline {
-        width: 450px;
+        max-width: 450px;
+    }
+
+    #bio {
+        max-width: 730px;
     }
 }
 

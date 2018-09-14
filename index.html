@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
+    <script src="./index.js"></script>
     <title>Reed Cheatham</title>
 </head>
 <body>
@@ -23,20 +29,21 @@
     <main>
         <section id="info">
             <div id="headline">
-                    <p>
-                        I'm Reed, a <span style="color:red;">front-end developer</span> & <span style="color:red;">design enthusiast</span> based out of Atlanta, GA.
-                    </p>
+                <p>
+                    I'm Reed, a <span style="color:red;">front-end developer</span> & <span style="color:red;">design enthusiast</span> based out of Atlanta, GA.
+                </p>
             </div>
             <div id="bio">
                 <p>
-                After five years in finance, I am starting a career in web development <br>
-                having recently graduated from the Full Stack Developer bootcamp at Thinkful. <br> 
-                I enjoy taking the problem solving skills I developed with financial modeling <br>
-                to a new level in coding dynamic, exciting web applications. <br>
-                <br>
-                I find the coding process very rewarding from designing the look and feel of a site <br>
-                to building its efficient functionality in order to create an exciting user experience. <br>
-                I am always learning and love to be introduced to new concepts, frameworks, design trends, <br>
+                After five years in finance, I am starting a career in web development 
+                having recently graduated from the Full Stack Developer bootcamp at Thinkful.  
+                I enjoy taking the problem solving skills I developed with financial modeling 
+                to a new level in coding dynamic, exciting web applications.
+                </p>
+                <p>
+                I find the coding process very rewarding from designing the look and feel of a site 
+                to building its efficient functionality in order to create an exciting user experience.
+                I am always learning and love to be introduced to new concepts, frameworks, design trends,
                 and ideas. When I am not coding I enjoy volunteering, meet-ups with the great tech scene in Atlanta,
                 and hiking.
                 </p>
@@ -108,25 +115,29 @@
         </section>
         <section id="contact">
             <span style="font-weight: bold;">Contact Me</span>
-            <form id="contactForm">
+            <p id="returnmessage"></p>
+            <form id="contactForm" method="POST" action="https://formspree.io/rrcheatham@gmail.com">
                 <div class="inputDiv">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName">
+                    <label for="name">Name: *</label>
+                    <input type="text" id="name" placeholder="Name">
                 </div>
                 <div class="inputDiv">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName">
+                    <label for="subject">Subject: *</label>
+                    <input type="text" id="subject" placeholder="Subject">
                 </div>
                 <div class="inputDiv">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
+                    <label for="email">Email: *</label>
+                    <input type="email" id="email" placeholder="Email">
                 </div>
                 <div class="inputDiv">
                     <label for="message">Message:</label>
-                    <textarea name="message" rows="10" id="message"></textarea>
+                    <textarea name="message" rows="10" id="message" placeholder="Message...."></textarea>
                 </div>
-                <input type="submit">
+                <input type="submit" name="submit" id="submit" class="btn">
             </form>
+            <p>You can also reach me at: <br>
+            reed.cheatham@outlook.com
+            </p>
         </section>
     </main>
     <footer>
