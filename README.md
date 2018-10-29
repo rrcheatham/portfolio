@@ -1,4 +1,4 @@
-# The Fintech Guru Expense Tracker
+# Portfolio
 
 ![Screenshot of account page](https://github.com/rrcheatham/portfolio/blob/master/screenshot.PNG)
 
