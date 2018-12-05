@@ -7,138 +7,146 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet"> 
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/float-grid.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script type="text/javascript" src="./index.js"></script>
     <title>Reed Cheatham</title>
 </head>
+
 <body>
-    <header>
+    <div id="mySidenav" class="sidenav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:reed.cheatham@outlook.com"><i class="fas fa-envelope fa-fw" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/reedcheatham/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a>
+    </div>
+    <nav role="navigation">
+        <span id="menubtn" style="font-size:26px;cursor:pointer" onclick="toggleNav()">&#9776;</span>
         <h1>Reed Cheatham</h1>
-        <nav>
-            <a href="#bio">Bio</a>
-            <a href="#movieMachine">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="https://github.com/rrcheatham">GitHub</a>
-            <a href="https://www.linkedin.com/in/reedcheatham/">LinkedIn</a>
-        </nav>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <section class="menu">
+          <a target="_blank" rel="noopener noreferrer" href="./files/Reed Cheatheam - Resume.pdf"><i class="fas fa-file-alt fa-fw" aria-hidden="true"></i>&nbsp;Résumé</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham"><i class="fab fa-github fa-fw" aria-hidden="true"></i>&nbsp;GitHub</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/reedcheatham/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp;LinkedIn</a>
+        </section>
+    </nav>
+
+    <header role="banner" id="top">
+        <div class="row">
+          <section class="col-12 box" role="region">
+            <h1 class="typewrite-header"><a href="" class="typewrite" data-period="2000" data-type='[ "Welcome, I am Reed, a Developer and Design Enthusiast from Atlanta, GA.", "Please take a look at my work." ]'>
+                <span class="wrap"></span></a></h1>
+          </section>
+          <a id="header-footer" href="#main"><i class="fas fa-arrow-circle-down fa-fw" aria-hidden="true"></i>&nbsp;Learn More</a>
+        </div>
     </header>
-    <main>
-        <section id="info">
-            <div id="headline">
-                <p>
-                    I'm Reed, a <span style="color:red;">front-end developer</span> & <span style="color:red;">design enthusiast</span> based out of Atlanta, GA.
-                </p>
-            </div>
-            <div id="bio">
-                <p>
-                After five years in finance, I am starting a career in web development 
-                having recently graduated from the Full Stack Developer bootcamp at Thinkful.  
-                I enjoy taking the problem solving skills I developed with financial modeling 
-                to a new level in coding dynamic, exciting web applications.
-                </p>
-                <p>
-                I find the coding process very rewarding from designing the look and feel of a site 
-                to building its efficient functionality in order to create an exciting user experience.
-                I am always learning and love to be introduced to new concepts, frameworks, design trends,
-                and ideas. When I am not coding I enjoy volunteering, meet-ups with the great tech scene in Atlanta,
-                and hiking.
-                </p>
-            </div>
-        </section>
-        <section id="movieMachine">
-            <div>
-                <p>
-                    The Movie Machine is an app that provides you a list of recommended titles based on one of your favorite
-                    films. Each result provides cast, rating, and plot information, along with MovieClips from YouTube, and links
-                    to places to stream or purchase online
-                </p>
-                <div class="tech">
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-            </div>
-            <div class="screenShot">   
-                <img src='./movieMachine.PNG' id="movieImage">
-                <div>
-                    <a href="https://rrcheatham.github.io/firstCapstone/"><i class="fas fa-external-link-alt"></i></a>
-                    <a href="https://github.com/rrcheatham/firstCapstone"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
-        <section id="expenseTracker">
-            <div>
-                <p>
-                    The Fintech Guru Expense Tracker is a simple expense tracker that gives users the ability to track, manage, 
-                    and target their monthly expenses over the course of a full year.
-                </p>
-                <div class="tech">
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-node-js"></i>
-                </div>
-            </div>
-            <div class="screenShot">   
-                <img src='./expenseTracker.PNG' id="expenseImage">
-                <div>
-                    <a href="https://salty-sands-51300.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
-                    <a href="https://github.com/rrcheatham/secondCapstone"><i class="fab fa-github"></i></a>
-                </div>    
-            </div>
-        </section>
-        <section id="goodLife">
-            <div>
-                <p>
-                    The Good Life is a retirement tracker app that allows users to target the amount they need 
-                    for retirement and track or adjust their savings to meet that goal.
-                </p>
-                <div class="tech">
-                    <i class="fab fa-js-square"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-node-js"></i>
-                    <i class="fab fa-react"></i>
-                </div>
-            </div>
-            <div class="screenShot">   
-                <img src='./goodLife.PNG' id="retirementImage">
-                <div>
-                    <a href="https://arcane-taiga-47013.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
-                    <a href="https://github.com/rrcheatham/retirement-calc-client"><i class="fab fa-github"></i>(client)</a>
-                    <a href="https://github.com/rrcheatham/retirement-calc-api"><i class="fab fa-github"></i>(api)</a>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <span style="font-weight: bold;">Contact Me</span>
-            <p id="returnmessage"></p>
-            <form id="contactForm" method="POST" action="https://formspree.io/rrcheatham@gmail.com">
-                <div class="inputDiv">
-                    <label for="name">Name: *</label>
-                    <input type="text" name="Name" id="name" placeholder="Name">
-                </div>
-                <div class="inputDiv">
-                    <label for="subject">Subject: *</label>
-                    <input type="text" name="_subject" id="subject" placeholder="Subject">
-                </div>
-                <div class="inputDiv">
-                    <label for="email">Email: *</label>
-                    <input type="email" name="_replyto" id="email" placeholder="Email">
-                </div>
-                <div class="inputDiv">
-                    <label for="message">Message:</label>
-                    <textarea name="message" rows="10" id="message" placeholder="Message...."></textarea>
-                </div>
-                <input type="submit" name="submit" id="submit" class="btn">
-            </form>
-            <p>You can also reach me at: <br>
-            reed.cheatham@outlook.com
-            </p>
-        </section>
+
+
+    <main role="main" id="main">
+        <article class="projects" id="projects">
+          <div class="row">
+            <section class="col-12 box" role="region">
+              <h1 class="section-header"><i class="fas fa-code fa-fw" aria-hidden="true"></i>&nbsp;Projects</h1>
+            </section>
+          </div>
+          <div class="row">
+            <section class="col-6 box" role="region">
+                <h2>Move Machine</h2>
+                <p>The Movie Machine is an app that provides you a list of recommended titles based on one of your favorite films. Each result provides cast, rating, and plot information, along with MovieClips from YouTube, and links to places to stream or purchase online.</p>
+                <hr />
+                <p>Tech Stack: HTML5, CSS3, JavaScript, jQuery</p>
+              </section>
+            <section class="col-6 box" role="region">
+              <img class="content-pic" src="./images/movieMachine.PNG" alt="Movie Machine screenshot." />
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://rrcheatham.github.io/firstCapstone/">Demo</a>
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham/firstCapstone">GitHub</a>
+            </section>
+          </div>
+          <div class="row">
+            <section class="col-6 box" role="region">
+              <h2>The Fintech Guru Expense Tracker</h2>
+              <p>The Fintech Guru Expense Tracker is a simple expense tracker that gives users the ability to track, manage, and target their monthly expenses over the course of a full year.</p>
+              <hr />
+              <p>Tech Stack: HTML5, CSS3, JavaScript, Node, Express, BCryptJS, JWT, and Passport.</p>
+            </section>
+            <section class="col-6 box" role="region">
+              <img class="content-pic" src="./images/expenseTracker.PNG" alt="Expense Tracker screenshot." />
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://salty-sands-51300.herokuapp.com/">Demo</a>
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham/secondCapstone">GitHub</a>
+            </section>
+          </div>
+          <div class="row">
+            <section class="col-6 box" role="region">
+              <h2>The Good Life</h2>
+              <p>The Good Life is a retirement tracker app that allows users to target the amount they need for retirement and track or adjust their savings to meet that goal..</p>
+              <hr />
+              <p>Tech Stack: HTML5, CSS3, JavaScript, React, Redux, Node, Express, BCryptJS, JWT, and Passport.</p>
+            </section>
+            <section class="col-6 box" role="region">
+              <img class="content-pic" src="./images/goodLife.PNG" alt="Good Life screenshot." />
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://arcane-taiga-47013.herokuapp.com/">Demo</a>
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham/retirement-calc-client">Client</a>
+              <a class="repo-link" target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham/retirement-calc-api">Server</a>
+            </section>
+          </div>
+        </article>
+    
+        <article class="about" id="about">
+          <div class="row">
+            <section class="col-12 box" role="region">
+              <h1 class="section-header"><i class="fas fa-user fa-fw" aria-hidden="true"></i>&nbsp;About Me</h1>
+              <img class="profile-pic" src="./images/profile-pic.jpg"/>
+              <p>After five years in finance, I am starting a career in web development having recently graduated from the Full Stack Developer bootcamp at Thinkful. I enjoy taking the problem solving skills I developed with financial modeling to a new level in coding dynamic, exciting web applications.</p>
+              <p>I find the coding process very rewarding from designing the look and feel of a site to building its efficient functionality in order to create an exciting user experience. I am always learning and love to be introduced to new concepts, frameworks, design trends, and ideas. When I am not coding I enjoy volunteering, meet-ups with the great tech scene in Atlanta, and hiking.</p>
+            </section>
+          </div>
+          <div class="row">
+            <section class="col-6 box" role="region">
+              <ul><i class="fas fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp;<span class="list-header">School</span>
+                <li><span class="list-title">Thinkful,</span>Full Stack Web Development, October 2018</li>
+                <li><span class="list-title">Georgia State University,</span>M.S. Finance, December 2010</li>
+                <li><span class="list-title">University of Virginia,</span>B.A. in English, June 2005</li>
+              </ul>
+            </section>
+            <section class="col-6 box" role="region">
+              <ul><i class="fas fa-briefcase fa-fw" aria-hidden="true"></i>&nbsp;<span class="list-header">Work</span>
+                <li><span class="list-title">Full Stack Developer,</span>Thinkful - Academic Projects, March 2018 - present</li>
+                <li><span class="list-title">Financial Analyst,</span>Kabbage, November 2015 - December 2016</li>
+                <li><span class="list-title">Management Reporting Analyst,</span>State Bank & Trust, February 2012 - January 2016</li>
+            </ul>
+            </section>
+          </div>
+        </article>
+
     </main>
-    <footer>
-        <p>&copy; 2018 Reed Cheatham</p>
-    </footer>
-</body>
+
+    <footer role="contentinfo" id="contact">
+        <div class="row">
+          <section class="col-4 box" role="region">
+            <h1>Reed Cheatham</h1>
+            <p>Let's Work Together!</p>
+          </section>
+          <section class="col-4 box" role="region">
+            <ul>&nbsp;<span class="list-header">Contact Me</span>
+              <li><a target="_blank" rel="noopener noreferrer" href="mailto:reed.cheatham@outlook.com"><i class="fas fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;reed.cheatham@outlook.com</a></li>
+            </ul>
+          </section>
+          <section class="col-4 box" role="region">
+            <ul><span class="list-header">Check Me Out</span>
+              <li><a target="_blank" rel="noopener noreferrer" href="./files/Reed Cheatheam - Resume.pdf"><i class="fas fa-file-alt fa-fw" aria-hidden="true"></i>&nbsp;Résumé</a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/rrcheatham"><i class="fab fa-github fa-fw" aria-hidden="true"></i>&nbsp;GitHub</a></li>
+              <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/reedcheatham/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp;LinkedIn</a></li>
+            </ul>
+          </section>
+          <a id="footer-footer" href="#top"><i class="fas fa-arrow-circle-up fa-fw" aria-hidden="true"></i>&nbsp;Back to top</a>
+        </div>
+      </footer>
+    </body>
 </html>
